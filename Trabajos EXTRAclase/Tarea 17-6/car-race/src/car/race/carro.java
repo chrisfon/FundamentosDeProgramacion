@@ -33,7 +33,7 @@ public carro(){
 public int moverse(){
    fuerza=(rand.nextInt(100)+100);
    
-   int Distancia=(rand.nextInt(2)*fuerza);
+   int Distancia=(rand.nextInt(1)*fuerza);
     
    System.out.print("Auto:"+marca+" Distancia recorrida:"+Distancia+"\n");        
     return (Distancia);
