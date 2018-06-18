@@ -15,12 +15,13 @@ import java.util.Scanner;
 public class carro {
     Random rand=new Random();
     Scanner scan=new Scanner(System.in);
-    public int fuerza;
+    
     public int año;
     public int Distancia;
     String marca;
+    public int fuerza;
 public carro(){
-  
+  fuerza=(rand.nextInt(100)+100);
   System.out.print("Que marca es el vehiculo?");
   marca=scan.next();
   System.out.print("de que a;o es el auto");
@@ -31,9 +32,9 @@ public carro(){
   
 }  
 public int moverse(){
-   fuerza=(rand.nextInt(100)+100);
    
-   int Distancia=(rand.nextInt(1)*fuerza);
+   
+   int Distancia=(rand.nextInt(2)*fuerza);
     
    System.out.print("Auto:"+marca+" Distancia recorrida:"+Distancia+"\n");        
     return (Distancia);
