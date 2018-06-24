@@ -45,7 +45,7 @@ public class TRIANGULO_ISOCELES {
       return Area;
   }
   public int calcPerimeter(){
-      Perimeter=(getSide()*2)+getBase();
+      Perimeter=getSide()+getSide()+getBase();
       return Perimeter;
   }
 }

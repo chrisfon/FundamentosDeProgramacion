@@ -69,7 +69,7 @@ public class AreaYPerimetro {
      }else if (ShapeSelected==4){
       TRIANGULO_ISOCELES triI=new TRIANGULO_ISOCELES();
       triI.setBase();
-      triI.setHeight();
+      triI.setSide();
       System.out.print("El perimetro es:"+triI.calcPerimeter());
      }else if (ShapeSelected==5){
       PENTAGONO pen=new PENTAGONO();
