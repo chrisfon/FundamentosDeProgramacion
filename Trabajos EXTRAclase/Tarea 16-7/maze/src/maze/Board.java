@@ -98,13 +98,13 @@ public class Board {
            direction.remove(move);
        if (move.equals("n")){
            if (maze[i-1][j]==4){
-               System.out.print("GANO");
+               System.out.print("GANO"+" ");
               
                inGame=false;
                break;
            }
            if (maze[i-1][j]==1){
-               System.out.print("CHOCO");
+               System.out.print(":("+" ");
               
                inGame=false;
                System.exit(0);
@@ -117,13 +117,13 @@ public class Board {
        }
        if (move.equals("o")){
            if (maze[i][j-1]==4){
-               System.out.print("GANO");
+               System.out.print("GANO"+" ");
               
                inGame=false;
                break;
            }
            if (maze[i][j-1]==1){
-               System.out.print("CHOCO");
+               System.out.print(":("+" ");
               
                inGame=false;
                System.exit(0);
@@ -136,13 +136,13 @@ public class Board {
        }
        if (move.equals("s")){
            if (maze[i+1][j]==4){
-               System.out.print("GANO");
+               System.out.print("GANO"+" ");
               
                inGame=false;
                break;
            }
            if (maze[i+1][j]==1){
-               System.out.print("CHOCO");
+               System.out.print(":("+" ");
               
                inGame=false;
                System.exit(0);
@@ -157,13 +157,13 @@ public class Board {
        
        if (move.equals("e")){
            if (maze[i][j+1]==4){
-               System.out.print("GANO");
+               System.out.print("GANO"+" ");
               
                inGame=false;
                break;
            }
            if (maze[i][j+1]==1){
-               System.out.print("CHOCO");
+               System.out.print(":("+" ");
               
                inGame=false;
                System.exit(0);
@@ -173,10 +173,12 @@ public class Board {
            current=maze[i][j++];
            print();
        }
-    }else{
-           System.out.print("NO TIENE ESE MOVIMIENTO DISPONIBLE");
+    }else if (direction.isEmpty()){
+           System.out.print("perdio"+" ");
            
-       }
+       }else{
+        System.out.print("not available"+" ");
+    }
    }
    }
    }
