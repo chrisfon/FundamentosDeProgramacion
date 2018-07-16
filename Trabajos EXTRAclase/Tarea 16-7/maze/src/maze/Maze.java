@@ -4,32 +4,31 @@
  * and open the template in the editor.
  */
 package maze;
+
 import java.util.Scanner;
+
 /**
  *
  * @author crazyiot
  */
 public class Maze {
 
- Scanner scan=new Scanner(System.in);  
- String move=scan.next();
- /**
- 
- * @param args the command line arguments
+    Scanner scan = new Scanner(System.in);
+    String move = scan.next();
+
+    /**
+     *
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
+
         String move;
-        boolean finish=false;
-        Board b=new Board();
+        boolean finish = false;
+        Board b = new Board();
         b.init();
         b.print();
         b.inGame();
-        
-       
-       }
-       
-       
-    }
-    
 
+    }
+
+}
