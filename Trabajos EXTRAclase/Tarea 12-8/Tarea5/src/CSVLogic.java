@@ -15,7 +15,7 @@ import javax.swing.JOptionPane;
 public class CSVLogic {
     //CAMBIAR PATH PARA QUE SIRVA EL PROGRAMA, SINO VA A TIRAR EXCEPCION
 
-    String csvFile = "PATH A CSV VA AQUI";
+    String csvFile = "E:\\Cosas del nuevo ssd\\Documents (setting de juegos y lol replays)\\NetBeansProjects\\Tarea5\\userlist.csv";
     BufferedReader br = null;
     String line = "";
     String SplitBy = ",";
